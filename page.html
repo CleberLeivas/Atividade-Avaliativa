@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Avaliativa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Protest+Revolution&display=swap" rel="stylesheet"></head>
+    <script src="script.js"></script>
+    
+    <body class="body">
+        <header>
+            <ul>
+                <li><a href="#p1">Perfil 1</a></li>
+                <li><a href="#p2">Perfil 2</a></li>
+                <li><a href="#tecnologia">Tecnologia</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </header>
+        <div id="p1" class="perfil1">
+            <div class="fotoPerfil">
+                <img class="image" src="https://avatars.githubusercontent.com/u/64513573?s=400&u=54c31869064424be40287b3f6b3e7928bbf099a7&v=4" alt="esse cara!!">
+            </div>
+            <div class="descrPerfil1">
+                <h1 class="fonts1" >Descrição</h1>
+                <p class="fonts2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsam, possimus nulla ab enim odio amet labore corporis, laudantium sint sit dolore numquam placeat laboriosam accusantium eum, quibusdam aliquam adipisci!</p>
+            </div>
+        </div>
+
+        <div id="p2" class="perfil2">
+            <div class="fotoPerfil">
+                <img class="image" src="https://avatars.githubusercontent.com/u/158315598?v=4" alt="imagem qualquer">
+            </div>
+            <div class="descrPerfil2" >
+                <h1 class="fonts1">Descrição</h1>
+                <p class="fonts2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ipsam, possimus nulla ab enim odio amet labore corporis, laudantium sint sit dolore numquam placeat laboriosam accusantium eum, quibusdam aliquam adipisci!</p> 
+            </div>
+        </div>
+
+        <div id="tecnologia" class="divTec">
+            <div class="tituloTec">
+                <h1 class="fonts1">Tecnologias</h1>
+                <p>passe o mouse na imagem</p>
+            </div>
+            <div class="iconsTecnologias">
+                <div class="imageTecContainer">
+                    <img class="imageTec" src="../Atividade-Avaliativa/image/html-5.png" alt="HTML5"> 
+                    <span class="nomeTecnologia">HTML5 Permite a criação de estruturas mais semânticas e acessíveis, além de suportar multimídia e interatividade sem a necessidade de plugins.</span>
+                </div>
+                <div class="imageTecContainer">
+                    <img class="imageTec" src="../Atividade-Avaliativa/image/css-3.png" alt="CSS3">
+                    <span class="nomeTecnologia">CSS3 Permite a criação de layouts responsivos e adaptação do estilo da página a diferentes dispositivos e tamanhos de tela.</span>
+                </div>
+                <div class="imageTecContainer">
+                    <img class="imageTec" src="../Atividade-Avaliativa/image/javascript.png" alt="JavaScript">
+                    <span class="nomeTecnologia">JavaScript é usado para adicionar comportamento e interatividade a elementos HTML, manipular eventos, criar animações, validar formulários, entre outras funcionalidades.</span>
+                </div>
+            </div>         
+        </div>             
+        
+        <div id="contato" class="contato">
+            <div class="cabecaContato-01">
+                <div>
+                    <h1 class="fonts1">Contato</h1>
+                    <p>Mande uma mensagem para mim</p>
+                </div>
+            </div>
+            <div class="corpoContato-02">
+                <div class="caixinha">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome">
+                                    
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea type="text" id="mensagem"> Manda minha nota aqui: </textarea>
+                </div>
+                <div class="orgBotao">
+                    <div class="button-30">
+                        <button class="btn" onclick="limpar()">Limpar</button>
+                    </div>
+                    <div class="button-30">
+                        <button onclick="enviarMensagemWhatsApp()">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="triangle-up" onclick="scrollToTop()"></div>
+        </div>
+    </body>
+</html>

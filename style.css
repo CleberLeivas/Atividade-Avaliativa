@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.fonts1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+}
+.fonts2{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --cor1: rgba(38, 70, 83, 1);
+    --cor2: rgba(42, 157, 143, 1);
+    --cor3: rgba(233, 196, 106, 1);
+    --cor4: rgba(244, 162, 97, 1);
+    --cor5: rgba(231, 111, 81, 1);
+}
+
+header{
+    background-color: var(--cor2);
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    box-shadow: var(--cor1);
+    z-index: 1000;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    transition: all 200ms linear;
+}
+a:hover{
+    cursor: pointer;
+    transition: all 200ms linear;
+    color: var(--cor3);
+    text-decoration: none !important;
+}
+
+li{
+    padding-top: 7px;
+}
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 200ms linear;
+}
+
+textarea{
+    width: 100%;
+    height: 200px;
+}
+input{
+    width: 100%;
+    height: 15px;
+}
+
+
+.perfil1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 500px;
+    padding-top: 30px;
+    background-color: var(--cor3);
+}
+
+.fotoPerfil{/*sendo usada pelos dois perfis*/
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: center; /*centralizar horizontal*/
+    align-items: center; /*centralizar vertical*/
+    flex-wrap: wrap;
+    flex-direction: left;
+    padding-left: 20px; /* Define o padding para o lado esquerdo */
+    padding-right: 20px; /* Define o padding para o lado direito */
+}
+
+.descrPerfil1{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: left; /*centralizar horizontal*/
+    align-items: center; /*centralizar vertical*/
+    flex-wrap: wrap;
+    flex-direction: left;
+    text-align: left; /*Não precisa, eu sei*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.perfil2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding-top: 30px;
+    background-color: var(--cor4);
+}
+
+.descrPerfil2{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: right; /*centralizar horizontal*/
+    align-items: center; /*centralizar vertical*/
+    flex-wrap: wrap;
+    flex-direction: left;
+    text-align: right;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    padding: 20px;    
+}
+
+.image{
+    position: relative;
+    max-width: 250px;
+    max-height: 250px;
+    overflow: hidden;
+    border: 5px solid var(--cor2);
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image:hover{
+    max-width: 250px;
+    border: 5px solid var(--cor3);
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.divTec{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    background-color: var(--cor5);
+}
+
+.tituloTec{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.iconsTecnologias{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.imageTec{
+    max-width: 200px;
+    max-height: 200px;
+    border: 5px solid var(--cor2);
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imageTec:hover{
+    max-width: 250px;
+    border: 5px solid var(--cor3);
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.imageTecContainer {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+.nomeTecnologia {
+    position: absolute;
+    right: -10%;
+    bottom: -40px;
+    transform: translateX(15%);
+    color: black;
+    padding: 3%;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 999;
+}
+
+.imageTecContainer:hover .nomeTecnologia {
+    opacity: 1;
+    background-color: var(--cor5)
+}
+
+
+.contato{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(233, 186, 58); /* ou qualquer outra cor desejada */
+}
+
+.cabecaContato-01 {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.corpoContato-02 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.caixinha {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+    width: 500px; /* Defina o tamanho desejado */
+    text-align: left;
+}
+
+.orgBotao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid var(--cor2);
+    display: flex;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
